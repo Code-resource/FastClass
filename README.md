@@ -8,4 +8,4 @@ bash run_sst.sh
 ```
 You can also use other datasets for testing, compare with other datasets, SST has a smaller amount of data and a shorter running time.
 
-We used python=3.8, torch-1.7.0, cudatoolkit=11.1. Other packages can be installed via pip install -r requirements.txt
+We used python=3.8, cudatoolkit=11.1. Other packages can be installed via pip install -r requirements.txt
