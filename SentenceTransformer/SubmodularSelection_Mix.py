@@ -10,7 +10,7 @@ import argparse
 
 def load_data(task, path, K):
     original_data = pd.read_csv(os.path.join(path, 'train_data_{}.txt'.format(K)), sep= '\t',header = None, names = ['target', 'score', 'data'],quoting=csv.QUOTE_NONE, error_bad_lines=False)
-    if task == 'situation' or task == 'comment':
+    if task == 'situation':
         data = pd.DataFrame(columns=('target', 'data', 'score'))
         data_scores, data_labels, data_docs = [], [], []
         for i in range(len(original_data)):

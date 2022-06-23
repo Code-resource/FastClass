@@ -15,7 +15,7 @@ import heapq
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--task", type=str, default='sst')
-    parser.add_argument("--path", type=str, default='/root/autodl-tmp/CLARET/data/sst')
+    parser.add_argument("--path", type=str, default='your_path/FastClass/data/sst')
     args = parser.parse_args()
     print('------------------------------------------Task external data select---------------------------------------------')
     print(vars(args))

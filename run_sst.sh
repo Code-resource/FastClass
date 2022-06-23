@@ -2,8 +2,8 @@
 start_time=$(date +%s)
 gpu=0
 dataset=sst
-DATA_DIR=/root/autodl-tmp/CLARET/data/GD/sst/
-Sen_DIR=/root/autodl-tmp/CLARET/SentenceTransformer/
+DATA_DIR=/your_path/FastClass/CLARET/data/sst/
+Sen_DIR=/your_path/FastClass/CLARET/SentenceTransformer/
 labels=2
 
 CUDA_VISIBLE_DEVICES=${gpu} python3 SentenceTransformer/Task_data.py --task ${dataset} --path ${DATA_DIR}

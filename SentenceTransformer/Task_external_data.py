@@ -131,7 +131,7 @@ if __name__ == "__main__":
     model = SentenceTransformer(model_name)
 
     multi_task = ['situation', 'comment']
-    datasets = ['MIND', 'MultiDomainSentimentDataset', 'wikidata']
+    datasets = ['MIND', 'MultiDomainSentimentDataset','S2ORC', 'realnews_2m', 'wiki500k_doc']
     max_corpus_size = 7000000
 
     embedding_size = 384  # Size of embeddings
