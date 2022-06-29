@@ -118,7 +118,6 @@ with gzip.open('realnews.tar.gz', 'rb') as pf:
                 # print(line.decode('utf8'))
                 doc = json.loads(line.decode('utf8').strip())
                 fw.write(doc['title'] + '\n')
-                # 为了暴露出错误，最好此处不print
             except:
                 print('error')
 fw.close()
